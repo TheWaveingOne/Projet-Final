@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2020-02-09" view-index="0" gantt-divider-location="492" resource-divider-location="355" version="2.8.10" locale="en_US">
+    <description/>
+    <view zooming-state="default:5" id="gantt-chart">
+        <field id="tpd3" name="Name" width="234" order="0"/>
+        <field id="tpd4" name="Begin date" width="78" order="1"/>
+        <field id="tpd5" name="End date" width="72" order="2"/>
+        <field id="tpd13" name="Resources" width="104" order="3"/>
+        <option id="taskLabelUp" value=""/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="238" order="0"/>
+        <field id="1" name="Default role" width="113" order="1"/>
+    </view>
+    <!-- -->
+    <calendars base-id="none">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="0" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="4" name="Finir mon schématique" color="#8cb6ce" meeting="false" start="2020-02-10" duration="12" complete="100" thirdDate="2020-01-27" thirdDate-constraint="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+            <task id="27" name="Ajouter tous mes pièces" color="#8cb6ce" meeting="false" start="2020-02-10" duration="6" complete="100" thirdDate="2020-02-10" thirdDate-constraint="0" expand="true"/>
+            <task id="32" name="Lier tous mes pièces" color="#8cb6ce" meeting="false" start="2020-02-16" duration="7" complete="100" thirdDate="2020-02-10" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="7" name="Finir mon matriciels" color="#8cb6ce" meeting="false" start="2020-02-24" duration="6" complete="100" thirdDate="2020-01-27" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="68" type="2" difference="0" hardness="Strong"/>
+            <task id="40" name="Me refrechir la mémoire sur les matriciels" color="#8cb6ce" meeting="false" start="2020-02-24" duration="1" complete="100" thirdDate="2020-02-19" thirdDate-constraint="0" expand="true"/>
+            <task id="43" name="Faire mon matriciel" color="#8cb6ce" meeting="false" start="2020-02-24" duration="6" complete="100" thirdDate="2020-02-19" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="68" name="Imprimer PCB" color="#8cb6ce" meeting="false" start="2020-03-02" duration="1" complete="100" thirdDate="2020-02-02" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="82" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="82" name="Souder mes composantes" color="#8cb6ce" meeting="false" start="2020-03-03" duration="2" complete="19" thirdDate="2020-02-09" thirdDate-constraint="0" expand="true">
+            <depend id="84" type="1" difference="0" hardness="Strong"/>
+        </task>
+        <task id="84" name="Débugger le PCB" color="#8cb6ce" meeting="false" start="2020-03-03" duration="5" complete="0" thirdDate="2020-02-09" thirdDate-constraint="0" expand="true">
+            <depend id="202" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="202" name="Teste" color="#8cb6ce" meeting="false" start="2020-03-09" duration="2" complete="0" thirdDate="2020-03-06" thirdDate-constraint="0" expand="true">
+            <depend id="93" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="93" name="Parti matériel fini" color="#8cb6ce" meeting="true" start="2020-03-11" duration="0" complete="0" thirdDate="2020-02-02" thirdDate-constraint="0" expand="true">
+            <depend id="203" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="203" name="Commencer Rapport &amp; Manuel" color="#8cb6ce" meeting="false" start="2020-03-11" duration="2" complete="0" thirdDate="2020-03-06" thirdDate-constraint="0" expand="true"/>
+        <task id="110" name="Programmation du contôleur" color="#8cb6ce" meeting="false" start="2020-03-09" duration="13" complete="2" thirdDate="2020-02-02" thirdDate-constraint="0" expand="true">
+            <task id="113" name="Faire mes fichiers de définition" color="#8cb6ce" meeting="false" start="2020-03-09" duration="2" complete="14" thirdDate="2020-02-02" thirdDate-constraint="0" expand="true"/>
+            <task id="115" name="Faire un programme de teste" color="#8cb6ce" meeting="false" start="2020-03-11" duration="1" complete="0" thirdDate="2020-03-11" thirdDate-constraint="0" expand="true">
+                <depend id="120" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="120" name="Coder mes fonctions" meeting="false" start="2020-03-12" duration="3" complete="0" expand="false">
+                <depend id="127" type="2" difference="0" hardness="Strong"/>
+                <task id="122" name="Tester la limite des moteurs" color="#8cb6ce" meeting="false" start="2020-03-12" duration="1" complete="0" thirdDate="2020-03-12" thirdDate-constraint="0" expand="true"/>
+                <task id="123" name="Executer une commande" color="#8cb6ce" meeting="false" start="2020-03-12" duration="3" complete="0" thirdDate="2020-03-12" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="127" name="Tester mon contrôleur" color="#8cb6ce" meeting="false" start="2020-03-16" duration="1" complete="0" thirdDate="2020-02-17" thirdDate-constraint="0" expand="true"/>
+            <task id="133" name="Temps debugging" color="#8cb6ce" meeting="false" start="2020-03-17" duration="4" complete="0" thirdDate="2020-03-17" thirdDate-constraint="0" expand="true">
+                <depend id="205" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="205" name="Temps rapport &amp; manuel" color="#8cb6ce" meeting="false" start="2020-03-22" duration="2" complete="0" thirdDate="2020-03-22" thirdDate-constraint="0" expand="true">
+                <depend id="136" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="136" name="Programmation du serveur" color="#8cb6ce" meeting="false" start="2020-03-24" duration="30" complete="0" thirdDate="2020-03-20" thirdDate-constraint="0" expand="false">
+            <task id="144" name="Communication contrôleur" color="#8cb6ce" meeting="false" start="2020-03-24" duration="17" complete="0" thirdDate="2020-03-23" thirdDate-constraint="0" expand="false">
+                <task id="157" name="Faire un fichier de définition" color="#8cb6ce" meeting="false" start="2020-03-24" duration="2" complete="0" thirdDate="2020-02-16" thirdDate-constraint="0" expand="true"/>
+                <task id="162" name="Faire un programme de teste" color="#8cb6ce" meeting="false" start="2020-03-25" duration="2" complete="0" thirdDate="2020-03-24" thirdDate-constraint="0" expand="true">
+                    <depend id="165" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="165" name="Coder mes fonctions" meeting="false" start="2020-03-27" duration="7" complete="0" expand="false">
+                    <depend id="166" type="2" difference="0" hardness="Strong"/>
+                    <task id="180" name="Validation du fichier Gerber" color="#8cb6ce" meeting="false" start="2020-03-27" duration="3" complete="0" thirdDate="2020-03-27" thirdDate-constraint="0" expand="true"/>
+                    <task id="185" name="Commencer un dessin" color="#8cb6ce" meeting="false" start="2020-03-30" duration="4" complete="0" thirdDate="2020-03-31" thirdDate-constraint="0" expand="true"/>
+                    <task id="179" name="Arrêt d'urgence" color="#8cb6ce" meeting="false" start="2020-04-01" duration="3" complete="0" thirdDate="2020-04-03" thirdDate-constraint="0" expand="true"/>
+                </task>
+                <task id="166" name="Temps debugging" color="#8cb6ce" meeting="false" start="2020-04-05" duration="3" complete="0" thirdDate="2020-04-05" thirdDate-constraint="0" expand="true">
+                    <depend id="167" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="167" name="Faire ma communication" color="#8cb6ce" meeting="false" start="2020-04-08" duration="1" complete="0" thirdDate="2020-04-08" thirdDate-constraint="0" expand="true">
+                    <depend id="168" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="168" name="Temps debugging" color="#8cb6ce" meeting="false" start="2020-04-09" duration="3" complete="0" thirdDate="2020-04-09" thirdDate-constraint="0" expand="true">
+                    <depend id="220" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="220" name="Rapport &amp; manuel" color="#8cb6ce" meeting="false" start="2020-04-13" duration="2" complete="0" thirdDate="2020-04-02" thirdDate-constraint="0" expand="true">
+                <depend id="142" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="142" name="Communication client" color="#000000" meeting="false" start="2020-04-15" duration="9" complete="0" thirdDate="2020-04-07" thirdDate-constraint="0" expand="false">
+                <depend id="228" type="2" difference="0" hardness="Strong"/>
+                <task id="154" name="Faire un fichier de définition" color="#8cb6ce" meeting="false" start="2020-04-15" duration="2" complete="0" thirdDate="2020-03-23" thirdDate-constraint="0" expand="true">
+                    <depend id="193" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="193" name="Coder mes fonctions" meeting="false" start="2020-04-17" duration="2" complete="0" expand="false">
+                    <depend id="201" type="2" difference="0" hardness="Strong"/>
+                    <task id="195" name="Faire la page web" color="#8cb6ce" meeting="false" start="2020-04-17" duration="2" complete="0" thirdDate="2020-04-17" thirdDate-constraint="0" expand="true"/>
+                    <task id="199" name="Vérifier l'authorisation" color="#8cb6ce" meeting="false" start="2020-04-17" duration="1" complete="0" thirdDate="2020-04-17" thirdDate-constraint="0" expand="true"/>
+                </task>
+                <task id="201" name="Tester d'un client web &amp; debugging" color="#8cb6ce" meeting="false" start="2020-04-20" duration="5" complete="0" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="228" name="Rapport &amp; manuel" color="#8cb6ce" meeting="false" start="2020-04-26" duration="2" complete="0" thirdDate="2020-04-26" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="49" name="Préparation a la présentation" color="#000000" meeting="false" start="2020-05-03" duration="3" complete="0" thirdDate="2020-05-04" thirdDate-constraint="0" expand="false">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+            <task id="50" name="Faire une affiche" color="#8cb6ce" meeting="false" start="2020-05-03" duration="2" complete="0" thirdDate="2020-02-10" thirdDate-constraint="0" expand="true"/>
+            <task id="52" name="Faire un visuel" color="#8cb6ce" meeting="false" start="2020-05-03" duration="2" complete="0" thirdDate="2020-02-10" thirdDate-constraint="0" expand="true"/>
+            <task id="53" name="Faire quelques exemples" color="#8cb6ce" meeting="false" start="2020-05-04" duration="2" complete="0" thirdDate="2020-02-10" thirdDate-constraint="0" expand="true"/>
+            <task id="54" name="Faire un texte" color="#8cb6ce" meeting="false" start="2020-05-05" duration="1" complete="0" thirdDate="2020-02-10" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="3" name="Présentation publique" color="#8cb6ce" meeting="true" start="2020-05-06" duration="0" complete="0" thirdDate="2020-01-27" thirdDate-constraint="0" expand="true"/>
+        <task id="230" name="Manuel ou rapport" color="#8cb6ce" meeting="false" start="2020-05-06" duration="6" complete="0" thirdDate="2020-05-06" thirdDate-constraint="0" expand="true">
+            <depend id="17" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="17" name="Remise du manuel d'utilisation" color="#8cb6ce" meeting="true" start="2020-05-13" duration="0" complete="0" thirdDate="2020-01-27" thirdDate-constraint="0" priority="4" expand="true">
+            <depend id="2" type="1" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" name="Présentation à Bilal" color="#8cb6ce" meeting="false" start="2020-05-13" duration="1" complete="0" thirdDate="2020-01-27" thirdDate-constraint="0" expand="true"/>
+        <task id="229" name="Rapport" color="#8cb6ce" meeting="false" start="2020-05-13" duration="4" complete="0" thirdDate="2020-05-13" thirdDate-constraint="0" expand="true"/>
+        <task id="0" name="Remise du rapport final" color="#8cb6ce" meeting="true" start="2020-05-18" duration="0" complete="0" thirdDate="2020-02-11" thirdDate-constraint="0" priority="4" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Benoit Houle" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="1" name="Maxime" function="SoftwareDevelopment:10" contacts="" phone=""/>
+        <resource id="2" name="Bilal" function="SoftwareDevelopment:10" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="32" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="27" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="43" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="40" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="82" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="84" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="202" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="203" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="113" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="115" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="127" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="133" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="205" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="122" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="123" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="220" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="228" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="157" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="162" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="180" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="185" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="179" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="167" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="166" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="168" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="154" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="201" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="195" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="199" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="230" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="229" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="68" resource-id="1" function="SoftwareDevelopment:10" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="2" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="2" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous>
+        <previous-tasks name="Remise Rapport ">
+            <previous-task id="4" start="2020-02-10" duration="7" meeting="false" super="true"/>
+            <previous-task id="27" start="2020-02-10" duration="5" meeting="false" super="false"/>
+            <previous-task id="32" start="2020-02-14" duration="2" meeting="false" super="false"/>
+            <previous-task id="36" start="2020-02-17" duration="2" meeting="false" super="false"/>
+            <previous-task id="7" start="2020-02-19" duration="5" meeting="false" super="true"/>
+            <previous-task id="40" start="2020-02-19" duration="1" meeting="false" super="false"/>
+            <previous-task id="43" start="2020-02-19" duration="5" meeting="false" super="false"/>
+            <previous-task id="49" start="2020-05-04" duration="2" meeting="false" super="true"/>
+            <previous-task id="50" start="2020-05-04" duration="1" meeting="false" super="false"/>
+            <previous-task id="52" start="2020-05-04" duration="1" meeting="false" super="false"/>
+            <previous-task id="53" start="2020-05-05" duration="1" meeting="false" super="false"/>
+            <previous-task id="54" start="2020-05-05" duration="1" meeting="false" super="false"/>
+            <previous-task id="3" start="2020-05-06" duration="1" meeting="false" super="false"/>
+            <previous-task id="2" start="2020-05-14" duration="1" meeting="false" super="false"/>
+            <previous-task id="17" start="2020-05-13" duration="1" meeting="false" super="false"/>
+            <previous-task id="0" start="2020-05-18" duration="1" meeting="false" super="false"/>
+        </previous-tasks>
+    </previous>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>

@@ -1,0 +1,65 @@
+{
+    "author": {
+        "email": "benoithoulep@gmail.com",
+        "name": "Benoit Houle"
+    },
+    "description": {
+        "EN": "Desciption"
+    },
+    "output_type": "directory",
+    "outputs": [
+        {
+            "filename_prefix": "",
+            "format_specifier": {
+                "decimal": 4,
+                "integer": 3
+            },
+            "generate_job_file": false,
+            "output_type": "gerber",
+            "outputs": [
+                {
+                    "board_outline": false,
+                    "config": {
+                        "description": "Pour faire des testes",
+                        "file_function": "Other"
+                    },
+                    "filename_format": "test3",
+                    "layers": [
+                        1
+                    ],
+                    "milling": false,
+                    "name": "DessinTest",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                }
+            ],
+            "version": "X2"
+        },
+        {
+            "filename_prefix": "CAMOutputs/DrillFiles",
+            "format_specifier": {
+                "decimal": 3,
+                "integer": 3
+            },
+            "output_type": "drill",
+            "outputs": [
+            ]
+        },
+        {
+            "filename_prefix": "CAMOutputs/Assembly",
+            "output_type": "assembly",
+            "outputs": [
+            ]
+        },
+        {
+            "filename_prefix": "CAMOutputs/DrawingFiles",
+            "output_type": "drawing",
+            "outputs": [
+            ]
+        }
+    ],
+    "timestamp": "2020-01-18T06:18:15",
+    "type": "EAGLE CAM job",
+    "units": "metric",
+    "version": "9.2.0"
+}

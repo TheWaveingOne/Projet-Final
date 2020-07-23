@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mon projet: Référence du fichier Commande.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mon projet
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.14 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Recherche');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#enum-members">Énumérations</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier Commande.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>DÃ©claration pour une commande.  
+<a href="#details">Plus de détails...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTPosition.html">TPosition</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">La position de dÃ©part et de fin des moteurs pour la commande.  <a href="structTPosition.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTCommande.html">TCommande</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tous l'information nÃ©cesaire pour executer une commande.  <a href="structTCommande.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:a589bd8909290d55cc8920a34f0996d6d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Commande_8hpp.html#a589bd8909290d55cc8920a34f0996d6d">TCodeCommande</a> { <br />
+&#160;&#160;<a class="el" href="Commande_8hpp.html#a589bd8909290d55cc8920a34f0996d6dae3243d9be1512cd50e40e780320714f5">CCOrigine</a> = 0, 
+<a class="el" href="Commande_8hpp.html#a589bd8909290d55cc8920a34f0996d6da9ee4635a0f3ddb9cd3be1250e876e60f">CCHorizontal</a> = 1, 
+<a class="el" href="Commande_8hpp.html#a589bd8909290d55cc8920a34f0996d6da232549a550eff3dba2b138678b10a07f">CCVertical</a> = 2, 
+<a class="el" href="Commande_8hpp.html#a589bd8909290d55cc8920a34f0996d6dab2f3146d1c5c1c57869e20cf1dfcf0c5">CCDiagonal</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="Commande_8hpp.html#a589bd8909290d55cc8920a34f0996d6da407fd86e02c4dc0ac877b3048907f0ea">CCPoint</a> = 4, 
+<a class="el" href="Commande_8hpp.html#a589bd8909290d55cc8920a34f0996d6da1cf023b32ff2f0b2798c889e760fec2e">CCBougerSansDessiner</a> = 5, 
+<a class="el" href="Commande_8hpp.html#a589bd8909290d55cc8920a34f0996d6da9df9126c616db8bc975c48a7b63cb1c9">CCDefault</a> = CCOrigine, 
+<a class="el" href="Commande_8hpp.html#a589bd8909290d55cc8920a34f0996d6dae0bedc0c05a966d3d3dd1ff0d6a68dc9">CCPremier</a> = CCOrigine, 
+<br />
+&#160;&#160;<a class="el" href="Commande_8hpp.html#a589bd8909290d55cc8920a34f0996d6da4659ae5a899893e850c685972ebc9520">CCDernier</a> = CCBougerSansDessiner
+<br />
+ }</td></tr>
+<tr class="memdesc:a589bd8909290d55cc8920a34f0996d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Les diffÃ©rentes commandes disponibles.  <a href="Commande_8hpp.html#a589bd8909290d55cc8920a34f0996d6d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a589bd8909290d55cc8920a34f0996d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><dl class="section version"><dt>Version</dt><dd>1.00 </dd></dl>
+<p>projet Graveur de circuit imprimÃ© (PCB) sur machine CNC</p>
+<dl class="section note"><dt>Note</dt><dd>Note au programmeur.</dd></dl>
+<hr/>
+<p> <b>Historique</b> </p><hr/>
+ <dl class="section date"><dt>Date</dt><dd>2020-03-03 </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Benoit Houle </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>CrÃ©ation du code.</dd></dl>
+<hr/>
+ </div><h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="a589bd8909290d55cc8920a34f0996d6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a589bd8909290d55cc8920a34f0996d6d">&#9670;&nbsp;</a></span>TCodeCommande</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="Commande_8hpp.html#a589bd8909290d55cc8920a34f0996d6d">TCodeCommande</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="a589bd8909290d55cc8920a34f0996d6dae3243d9be1512cd50e40e780320714f5"></a>CCOrigine&#160;</td><td class="fielddoc"><p>Retourner a l'origine. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a589bd8909290d55cc8920a34f0996d6da9ee4635a0f3ddb9cd3be1250e876e60f"></a>CCHorizontal&#160;</td><td class="fielddoc"><p>Executer un mouvement horizontal. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a589bd8909290d55cc8920a34f0996d6da232549a550eff3dba2b138678b10a07f"></a>CCVertical&#160;</td><td class="fielddoc"><p>Executer un mouvement vertical. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a589bd8909290d55cc8920a34f0996d6dab2f3146d1c5c1c57869e20cf1dfcf0c5"></a>CCDiagonal&#160;</td><td class="fielddoc"><p>Executer un mouvement diagonal. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a589bd8909290d55cc8920a34f0996d6da407fd86e02c4dc0ac877b3048907f0ea"></a>CCPoint&#160;</td><td class="fielddoc"><p>Dessiner un point. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a589bd8909290d55cc8920a34f0996d6da1cf023b32ff2f0b2798c889e760fec2e"></a>CCBougerSansDessiner&#160;</td><td class="fielddoc"><p>Bouger les moteurs sans dessiner. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a589bd8909290d55cc8920a34f0996d6da9df9126c616db8bc975c48a7b63cb1c9"></a>CCDefault&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a589bd8909290d55cc8920a34f0996d6dae0bedc0c05a966d3d3dd1ff0d6a68dc9"></a>CCPremier&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a589bd8909290d55cc8920a34f0996d6da4659ae5a899893e850c685972ebc9520"></a>CCDernier&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Mardi 26 Mai 2020 15:28:58 pour Mon projet par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

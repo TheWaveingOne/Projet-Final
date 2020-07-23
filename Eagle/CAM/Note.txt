@@ -1,0 +1,102 @@
+A Gerber file uses printable 7-bit ASCII characters. It is printable and human readable.
+A Gerber file is a stream of commands. The commands create a stream of graphics objects
+(see 2.2) that are put on the image plane to create the final image. Other commands add
+attributes to structures in the image- attributes are labels defining meta-information.
+A Gerber file can be processed in a single pass. Names, parameters and objects must be
+defined before they are used.
+As an illustration here is a small Gerber file with one command per line. It creates a circle of 1.5
+mm in the origin.
+%FSLAX26Y26*%
+%MOMM*%
+%ADD100C,1.5*%
+D100*
+X0Y0D03*
+M02*
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A la fin d'une commande EX: X177800Y660400D02* ou X749300Y660400D01*
+
+D01 dessine une ligne de la location actuel a la location indiqué dans la commande.
+D02 change la location actuel sans faire de dessin.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3.3 Character Set
+A Gerber file is expressed in the 7-bit ASCII codes 32 to 126 (i.e. the printable characters in
+ANSI X3.4-1986) plus codes 10 (LF, Line Feed) and 13 (CR, Carriage Return). 
+No other characters are allowed. 
+Gerber files are therefore printable and human readable.
+The line separators CR and LF have no effect, they can be ignored when processing the file.
+They are used to improve human readability.
+Space characters can only be used inside strings (see 3.6.6).
+Gerber files are case-sensitive. Command codes must be in upper case.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Name 	Shape 			Modifiers 												Section
+C 		Circle 			Diameter, Hole diameter 								4.4.2
+R 		Rectangle 		X size, Y size, Hole diameter 							4.4.3
+O 		Obround 		X size, Y size, Hole diameter 							4.4.4
+P 		Polygon 		Outer diameter, # vertices, Rotation, Hole diameter 	4.4.5
+
+
+Obround = rectangle avec les coins ronds
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Commande a care : 
+
+%FSLAX46Y46*%		
+
+X46 = 0000.000000
+1-4 nombre point flotant
+0-6 nombre point flotant
+
+
+
+D01 dessine une ligne de la location actuel a la location indiqué dans la commande.
+D02 change la location actuel sans faire de dessin.
+
+G04 Comment. (commence par G04)
+0  Un zéro(0) suivi dun espace fait un commentaire jusquau prochain astérisk(*) comme dans cette ligne*
+
+M02 End of file. 
+
+%MOIN*%		Dimensions are expressed in inches
+%MOMM*%		Dimensions are expressed in millimeters
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Example:
+
+X0Y0D02*   Set current point to (0, 0)
+
+X500000Y0D01*     Create draw graphics object using the current aperture D10: start
+				  point is the current point (0,0), end point is (5, 0)
+				  
+Y500000D01*		  Create draw using the current aperture: (5, 0) to (5, 5)
+
+X0D01*			  Create draw using the current aperture: (5, 5) to (0, 5)
+
+Y0D01*			  Create draw using the current aperture: (0, 5) to (0, 0)
+
+X600000D02*		  Set current point to (6, 0)
+
+X1100000D01* 	  Create draw using the current aperture: (6, 0) to (11, 0)
+
+Y500000D01*		  Create draw using the current aperture: (11, 0) to (11, 5)
+
+X600000D01*		  Create draw using the current aperture: (11, 5) to (6, 5)
+
+Y0D01*			  Create draw using the current aperture: (6, 5) to (6, 0)
+
+M02*			  End of file
+
+
+In the next example there are two operations. The first operation sets the current point to (300,
+200). The second operation creates a graphics object (arc or draw, depending on the
+interpolation mode) from the current point to the end point (1100, 200).
+Example:
+X300Y200D02*
+X1100Y200D01*
+
+
+
+
+
+
